@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "./home/Header";
 import Footer from "./home/Footer.jsx";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></Script>
     </html>
   );
 }
