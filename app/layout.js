@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "./home/Header";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,7 +33,11 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {" "}
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
