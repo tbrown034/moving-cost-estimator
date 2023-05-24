@@ -3,16 +3,16 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <section className="flex flex-col items-center justify-around px-10 py-10 min-h-75vh bg-slate-200 text-emerald-800">
+      <section className="flex flex-col items-center justify-around px-10 py-10 min-h-80vh bg-slate-200 text-emerald-800">
         <Link
           href="/"
-          className="flex flex-col items-center justify-center px-8 py-1 rounded-full sm:block text-emerald-900 ring-1 ring-emerald-900/10 hover:ring-emerald-900/20 bg-slate-100 hover:bg-slate-50"
+          className="flex flex-col items-center justify-center px-8 rounded-full sm:block text-emerald-900 ring-1 ring-emerald-900/10 hover:ring-emerald-900/20 bg-slate-100 hover:bg-slate-50"
         >
           <span>Using AI-Powered Tech to Fuel Your Move.</span>
           <span className="font-bold"> Read More</span>
         </Link>
 
-        <div className="text-center">
+        <div className="space-y-1 text-center">
           <h1 className="text-6xl font-bold tracking-wide sm:text-6xl">
             ship<span className=" text-emerald-600">It</span>
           </h1>
@@ -24,10 +24,9 @@ export default function Hero() {
               move
             </span>
           </div>
-          <p className="text-lg leading-8 sm:px-28">
-            Moving is stressful enough. Not knowing how much to bring - and how
-            much it will cost - can be a headache. But we'll help carry that
-            load now with some AI-powered magic!
+          <p className="text-2xl leading-8 sm:px-28">
+            Moving is stressful enough. But we'll help carry that load now with
+            some AI-powered magic!
           </p>
         </div>
         <div>

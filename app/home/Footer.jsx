@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <>
       <footer className=" text-slate-100 bg-emerald-800">
-        <div className="w-full max-w-screen-xl p-4 mx-auto md:py-8">
+        <div className="w-full max-w-screen-xl p-10 mx-auto md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link
               href="/"
