@@ -1,17 +1,20 @@
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/Images/favicon-32x32.png";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-emerald-800 text-slate-100 ">
+      <footer className=" text-slate-100 bg-emerald-800">
         <div className="w-full max-w-screen-xl p-4 mx-auto md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link
               href="/"
-              className="flex items-center mb-4 text-gray-300 sm:mb-0 hover:text-white"
+              className="flex items-center mb-4 hover:text-gray-900 sm:mb-0 "
             >
-              <Image src={logo} alt="logo"></Image>
+              <span
+                className="material-symbols-outlined text-slate-100 "
+                style={{ fontSize: "40px" }}
+              >
+                move
+              </span>
               <span className="self-center pl-3 text-2xl font-semibold whitespace-nowrap ">
                 ShipIt
               </span>
