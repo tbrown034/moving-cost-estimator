@@ -28,6 +28,11 @@ export default function Header() {
           <Link href="/about">About</Link>
         </div>
 
+        {/* 'Get Started' link - only visible on sm screens and larger */}
+        <Link className="hidden sm:block" href="/">
+          Get Started
+        </Link>
+
         {/* Class modified here */}
         <Menu as="div" className="relative inline-block text-left sm:hidden">
           <Menu.Button
