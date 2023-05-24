@@ -22,13 +22,16 @@ export default function Header() {
         </div>
 
         <div className="justify-center flex-1 hidden gap-8 sm:flex">
-          <Link className="hover:underline focus:font-bold" href="/">
+          <Link className="hover:font-semibold focus:font-bold" href="/">
             Home
           </Link>
-          <Link className="hover:underline focus:font-bold" href="/estimator">
+          <Link
+            className="hover:font-semibold focus:font-bold"
+            href="/estimator"
+          >
             Estimate Your Move
           </Link>
-          <Link className="hover:underline focus:font-bold" href="/about">
+          <Link className="hover:font-semibold focus:font-bold" href="/about">
             About
           </Link>
         </div>
@@ -61,8 +64,10 @@ export default function Header() {
                     <Link
                       href="/"
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                        active
+                          ? "bg-emerald-800 text-white"
+                          : "text-emerald-900"
+                      } group flex rounded-md items-center w-3/5 px-2 py-2 text-sm`}
                     >
                       Home
                     </Link>
@@ -73,10 +78,12 @@ export default function Header() {
                     <Link
                       href="/estimator"
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                        active
+                          ? "bg-emerald-800 text-white"
+                          : "text-emerald-900"
+                      } group flex rounded-md items-center w-3/5 px-2 py-2 text-sm`}
                     >
-                      Build Your Move
+                      Estimate Your Move
                     </Link>
                   )}
                 </Menu.Item>
@@ -85,8 +92,10 @@ export default function Header() {
                     <Link
                       href="/about"
                       className={`${
-                        active ? "bg-violet-500 text-white" : "text-gray-900"
-                      } group flexrounded-md items-center w-full px-2 py-2 text-sm`}
+                        active
+                          ? "bg-emerald-800 text-white"
+                          : "text-emerald-900"
+                      } group flex rounded-md items-center  w-3/5 px-2 py-2 text-sm`}
                     >
                       About
                     </Link>
