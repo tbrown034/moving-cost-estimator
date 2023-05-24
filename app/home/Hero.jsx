@@ -8,9 +8,11 @@ export default function Hero() {
       <section className="flex flex-col items-center justify-around px-10 py-10 min-h-80vh bg-slate-200 text-emerald-800">
         <Link
           href="/about"
-          className="flex flex-col items-center justify-center px-8 rounded-full sm:block text-emerald-900 ring-1 ring-emerald-900/10 hover:ring-emerald-900/20 bg-slate-100 hover:bg-slate-50"
+          className="flex flex-col items-center justify-center px-8 py-2 text-center rounded-full sm:block text-emerald-900 ring-1 ring-emerald-900/10 hover:ring-emerald-900/20 bg-slate-100 hover:bg-slate-50"
         >
-          <span>Using AI-Powered Tech to Fuel Your Move.</span>
+          <span className="text-center ">
+            Using AI-Powered Tech to Fuel Your Move.
+          </span>
           <span className="font-bold"> Read More</span>
         </Link>
 
