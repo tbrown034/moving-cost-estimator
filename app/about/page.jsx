@@ -2,16 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Contact from "./contact";
 
 export default function Page() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Form submission logic goes here
-  };
   return (
     <>
-      <section className="flex flex-col items-center justify-around gap-4 px-10 py-10 min-h-vh bg-slate-200 text-emerald-800">
-        <div className="space-y-1 text-center">
+      <section className="flex flex-col items-center gap-6 py-10 px-14 min-h-vh bg-slate-200 text-emerald-800">
+        <div className="space-y-4 text-center">
           <h1 className="text-6xl font-bold tracking-wide sm:text-6xl">
             About <span className=" text-emerald-600">shipIt</span>
           </h1>
@@ -30,18 +27,18 @@ export default function Page() {
               info
             </motion.span>
           </div>
-          <p className="text-2xl leading-8 sm:px-28">
+          <p className="text-2xl leading-8 ">
             ShipIt is an innovative project designed to make moving easier.
             Using advanced AI technologies, we simplify the process of planning,
             organizing and managing your move.
           </p>
         </div>
 
-        <div className="mt-10 space-y-1 text-center">
+        <div className="mt-10 space-y-4 text-center">
           <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
             How It <span className=" text-emerald-600">Works</span>
           </h2>
-          <p className="text-2xl leading-8 sm:px-28">
+          <p className="text-2xl leading-8 ">
             ShipIt uses AI to estimate your moving needs based on a few simple
             questions. This advanced system adapts and learns, providing more
             accurate results the more you use it. No need to stress, let our
@@ -49,11 +46,23 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-1 text-center">
+        <div className="mt-10 space-y-4 text-center">
           <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
+            About <span className=" text-emerald-600">Me</span>
+          </h2>
+          <p className="text-2xl leading-8 ">
+            As a technology enthusiast with a passion for simplifying everyday
+            tasks, I created ShipIt to revolutionize the moving industry. My aim
+            is to harness the power of AI to provide stress-free moving
+            experiences for everyone.
+          </p>
+        </div>
+
+        <div className="mt-10 space-y-4 text-center">
+          <h2 className="text-xl font-bold tracking-wide sm:text-4xl">
             Privacy <span className=" text-emerald-600">Policy</span>
           </h2>
-          <p className="text-2xl leading-8 sm:px-28">
+          <p className="text-2xl italic leading-8 ">
             At ShipIt, we value your privacy and are committed to maintaining
             the trust and confidence of our users. We will never sell, rent or
             trade your personal information to other companies for marketing
@@ -63,77 +72,35 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-1 text-center">
+        <div className="mt-10 space-y-4 text-center">
           <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
-            About <span className=" text-emerald-600">Me</span>
+            Standard <span className=" text-emerald-600">Disclosure</span>
           </h2>
-          <p className="text-2xl leading-8 sm:px-28">
-            As a technology enthusiast with a passion for simplifying everyday
-            tasks, I created ShipIt to revolutionize the moving industry. My aim
-            is to harness the power of AI to provide stress-free moving
-            experiences for everyone.
+          <p className="text-xl italic leading-8 ">
+            The information, estimates, and recommendations ("Information")
+            provided by Moving Cost Estimator are for general information,
+            research, and entertainment purposes only. While we endeavor to keep
+            the information up to date and correct, we make no representations
+            or warranties of any kind, express or implied, about the
+            completeness, accuracy, reliability, suitability, or availability
+            with respect to the information contained on the website for any
+            purpose. Any reliance you place on such information is therefore
+            strictly at your own risk.<br></br>
+            <br></br> The information does not constitute advice, an offer, an
+            invitation to offer, a proposal, or an invitation to enter into a
+            legally binding contract. In no event will we be liable for any loss
+            or damage including without limitation, indirect or consequential
+            loss or damage, or any loss or damage whatsoever arising from, out
+            of, or in connection with the use of this website and the
+            information contained therein. <br></br>
+            <br></br> Please seek the advice of professionals, as appropriate,
+            regarding the evaluation of any specific information, estimate, or
+            content on this website. Moving Cost Estimator is not responsible
+            for, and expressly disclaims all liability for, damages of any kind
+            arising out of use, reference to, or reliance on any information
+            contained within the site. By using this website, you agree to the
+            terms of this disclaimer.
           </p>
-        </div>
-        <div className="mt-10 space-y-1 text-center">
-          <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
-            Contact <span className=" text-emerald-600">Us</span>
-          </h2>
-          <form onSubmit={handleSubmit} className="w-full max-w-lg">
-            <div className="flex flex-wrap mb-6 -mx-3">
-              <div className="w-full px-3">
-                <label
-                  className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                  for="name"
-                >
-                  Name
-                </label>
-                <input
-                  className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border rounded appearance-none focus:outline-none focus:bg-white"
-                  id="name"
-                  type="text"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div className="w-full px-3">
-                <label
-                  className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                  for="email"
-                >
-                  Email
-                </label>
-                <input
-                  className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border rounded appearance-none focus:outline-none focus:bg-white"
-                  id="email"
-                  type="email"
-                  placeholder="john@example.com"
-                />
-              </div>
-              <div className="w-full px-3">
-                <label
-                  className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-                  for="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  className="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-red-500 rounded appearance-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="message"
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-            </div>
-            <div className="md:flex md:items-center">
-              <div className="md:w-1/3">
-                <button
-                  className="px-4 py-2 font-bold text-white rounded shadow bg-emerald-800 hover:bg-emerald-600 focus:shadow-outline focus:outline-none"
-                  type="submit"
-                >
-                  Send
-                </button>
-              </div>
-              <div className="md:w-2/3"></div>
-            </div>
-          </form>
         </div>
 
         <div>
@@ -153,6 +120,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 }
