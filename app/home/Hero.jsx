@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -17,12 +19,19 @@ export default function Hero() {
             ship<span className=" text-emerald-600">It</span>
           </h1>
           <div className="flex justify-center p-4">
-            <span
+            <motion.span
               className="text-6xl material-symbols-outlined text-emerald-800"
               style={{ fontSize: "80px" }}
+              whileHover={{ rotate: 360 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -90,
+                borderRadius: "100%",
+              }}
+              transition={{ duration: 1 }}
             >
               move
-            </span>
+            </motion.span>
           </div>
           <p className="text-2xl leading-8 sm:px-28">
             Moving is stressful enough. But we'll help carry that load now with
@@ -33,13 +42,13 @@ export default function Hero() {
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Link
               href="#"
-              className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 hover:text-emerald-600 "
+              className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
             >
               Get started
             </Link>
             <Link
               href="#"
-              className="rounded-md text-emerald-800 px-3.5 py-2.5 text-sm font-semibold bg-white shadow-sm hover:bg-slate-800 hover:text-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-80000"
+              className="rounded-md text-emerald-800 px-3.5 py-2.5 text-sm font-semibold bg-white shadow-sm hover:bg-emerald-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
             >
               Learn More
             </Link>

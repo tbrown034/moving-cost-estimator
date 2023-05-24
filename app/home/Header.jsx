@@ -8,32 +8,37 @@ export default function Header() {
     <nav>
       <section className="flex items-center justify-between px-8 py-4 bg-emerald-800 text-slate-200">
         <div>
-          <Link href="/" className="flex hover:text-gray-900 ">
+          <Link href="/" className="flex ">
             <span
               className="material-symbols-outlined text-slate-100 "
               style={{ fontSize: "40px" }}
             >
               move
             </span>
-            <span className="self-center pl-3 text-2xl font-semibold whitespace-nowrap ">
+            <span className="self-center pl-3 text-2xl font-semibold whitespace-nowrap hover:underline hover:underline-offset-8">
               ShipIt
             </span>
           </Link>
         </div>
 
-        {/* New div added here */}
         <div className="justify-center flex-1 hidden gap-8 sm:flex">
-          <Link href="/">Home</Link>
-          <Link href="/build">Build Your Move</Link>
-          <Link href="/about">About</Link>
+          <Link className="hover:underline" href="/">
+            Home
+          </Link>
+          <Link className="hover:underline" href="/build">
+            Estimate Your Move
+          </Link>
+          <Link className="hover:underline" href="/about">
+            About
+          </Link>
         </div>
 
-        {/* 'Get Started' link - only visible on sm screens and larger */}
-        <Link className="hidden sm:block" href="/">
+        <Link
+          className="hidden p-2 border-2 rounded-lg sm:block border-slate-50 hover:bg-slate-100 hover:text-emerald-800"
+          href="/"
+        >
           Get Started
         </Link>
-
-        {/* Class modified here */}
         <Menu as="div" className="relative inline-block text-left sm:hidden">
           <Menu.Button
             className="material-symbols-outlined text-slate-100 "
