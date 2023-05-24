@@ -50,7 +50,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-6 py-10 text-xl px-14 min-h-vh bg-slate-200 text-emerald-800 ">
+      <div className="flex flex-col items-center gap-6 px-4 py-10 text-xl sm:px-16 min-h-vh bg-slate-200 text-emerald-800 ">
         <form
           onSubmit={handleSubmit}
           className="w-full p-10 space-y-4 border-2 rounded-lg shadow-lg border-emerald-800"
