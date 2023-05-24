@@ -27,7 +27,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/estimator"
                   className="mr-4 text-gray-300 hover:text-white md:mr-6"
                 >
                   EstimateIt

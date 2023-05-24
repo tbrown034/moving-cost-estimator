@@ -22,20 +22,19 @@ export default function Header() {
         </div>
 
         <div className="justify-center flex-1 hidden gap-8 sm:flex">
-          <Link className="hover:underline" href="/">
+          <Link className="hover:underline focus:font-bold" href="/">
             Home
           </Link>
-          <Link className="hover:underline" href="/estimator">
+          <Link className="hover:underline focus:font-bold" href="/estimator">
             Estimate Your Move
           </Link>
-          <Link className="hover:underline" href="/about">
+          <Link className="hover:underline focus:font-bold" href="/about">
             About
           </Link>
         </div>
-
         <Link
-          className="hidden p-2 border-2 rounded-lg sm:block border-slate-50 hover:bg-slate-100 hover:text-emerald-800"
           href="/estimator"
+          className="hidden p-2 rounded-lg border-1 sm:block border-slate-50 hover:bg-slate-200 hover:text-emerald-900 focus:ring-2 focus:ring-offset-1"
         >
           Get Started
         </Link>

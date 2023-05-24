@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <section className="flex flex-col items-center justify-around px-10 py-10 min-h-80vh bg-slate-200 text-emerald-800">
         <Link
-          href="/"
+          href="/about"
           className="flex flex-col items-center justify-center px-8 rounded-full sm:block text-emerald-900 ring-1 ring-emerald-900/10 hover:ring-emerald-900/20 bg-slate-100 hover:bg-slate-50"
         >
           <span>Using AI-Powered Tech to Fuel Your Move.</span>
