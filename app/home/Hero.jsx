@@ -41,13 +41,13 @@ export default function Hero() {
         <div>
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Link
-              href="#"
+              href="/estimator"
               className="rounded-md bg-emerald-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
             >
               Get started
             </Link>
             <Link
-              href="#"
+              href="/about"
               className="rounded-md text-emerald-800 px-3.5 py-2.5 text-sm font-semibold bg-white shadow-sm hover:bg-emerald-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
             >
               Learn More

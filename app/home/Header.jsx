@@ -25,7 +25,7 @@ export default function Header() {
           <Link className="hover:underline" href="/">
             Home
           </Link>
-          <Link className="hover:underline" href="/build">
+          <Link className="hover:underline" href="/estimator">
             Estimate Your Move
           </Link>
           <Link className="hover:underline" href="/about">
@@ -35,7 +35,7 @@ export default function Header() {
 
         <Link
           className="hidden p-2 border-2 rounded-lg sm:block border-slate-50 hover:bg-slate-100 hover:text-emerald-800"
-          href="/"
+          href="/estimator"
         >
           Get Started
         </Link>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      href="/build"
+                      href="/estimator"
                       className={`${
                         active ? "bg-violet-500 text-white" : "text-gray-900"
                       } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
