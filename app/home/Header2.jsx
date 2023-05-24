@@ -20,7 +20,16 @@ export default function Header2() {
             </span>
           </Link>
         </div>
-        <Menu as="div" className="relative inline-block text-left">
+
+        {/* New div added here */}
+        <div className="justify-center flex-1 hidden gap-8 sm:flex">
+          <Link href="/">Home</Link>
+          <Link href="/build">Build Your Move</Link>
+          <Link href="/about">About</Link>
+        </div>
+
+        {/* Class modified here */}
+        <Menu as="div" className="relative inline-block text-left sm:hidden">
           <Menu.Button
             className="material-symbols-outlined text-slate-100 "
             style={{ fontSize: "40px" }}
@@ -36,7 +45,7 @@ export default function Header2() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right divide-y divide-gray-100 rounded-md shadow-lg bg-slate-200 ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="px-1 py-1 ">
                 <Menu.Item>
                   {({ active }) => (

@@ -7,7 +7,15 @@ module.exports = {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      minHeight: {
+        "75vh": "75vh",
+        "25vh": "25vh",
+        "80vh": "80vh",
+        "75vh": "75vh",
+        "66vh": "66vh",
+      },
+    },
   },
   plugins: [require("preline/plugin")],
 };
