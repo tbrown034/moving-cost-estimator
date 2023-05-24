@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <section className="flex flex-col items-center justify-center min-h-screen bg-slate-200 text-emerald-800">
         <div className="">
-          <div className="relative px-3 py-1 my-8 text-sm leading-6 rounded-full text-emerald-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="relative px-3 py-1 my-8 text-sm leading-6 rounded-full text-emerald-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20 bg-slate-100">
             Using AI-Powered Tech to Fuel Your Move.{" "}
             <Link href="#" className="font-semibold text-emerald-800">
               <span className="absolute inset-0" aria-hidden="true" />
@@ -14,8 +14,8 @@ export default function Hero() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            EstimateIt and ShipIt
+          <h1 className="text-6xl font-bold tracking-wide sm:text-6xl">
+            ship<span className=" text-emerald-600">It</span>
           </h1>
           <div className="flex justify-center p-4">
             <span
@@ -27,8 +27,8 @@ export default function Hero() {
           </div>
           <p className="text-lg leading-8 ">
             Moving is stressful enough. Not knowing how much to bring - and how
-            much it will cost - can be a headache. But no longer with the help
-            of AI-powered magic!
+            much it will cost - can be a headache. But we'll help carry that
+            load now with some AI-powered magic!
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <Link
