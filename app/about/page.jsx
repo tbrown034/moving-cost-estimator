@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Contact from "./contact";
+import Image from "next/image";
+import trevor from "../../public/Images/Trevor12.JPG";
 
 export default function Page() {
   return (
@@ -46,29 +48,45 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-4 text-center">
+        <div className="flex flex-col items-center justify-center mt-10 space-y-4 text-center">
           <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
             About <span className=" text-emerald-600">Me</span>
           </h2>
+          <Image
+            className="rounded-full"
+            src={trevor}
+            alt="Rounded avatar"
+            width={150}
+            height={150}
+          ></Image>
           <p className="text-2xl leading-8 ">
-            As a technology enthusiast with a passion for simplifying everyday
-            tasks, I created ShipIt to revolutionize the moving industry. My aim
-            is to harness the power of AI to provide stress-free moving
-            experiences for everyone.
+            Hi, I'm{" "}
+            <Link
+              className="font-semibold hover:font-bold hover:underline"
+              href="https://helloimtrevor.com/"
+            >
+              Trevor Brown
+            </Link>
+            . After almost two decades as an investigative journalist, I'm
+            moving into the coding world. And as a technology enthusiast with a
+            passion for simplifying everyday tasks, I created ShipIt to
+            revolutionize the moving industry. My aim is to harness the power of
+            AI to provide stress-free moving experiences for everyone.
           </p>
         </div>
 
         <div className="mt-10 space-y-4 text-center">
-          <h2 className="text-xl font-bold tracking-wide sm:text-4xl">
+          <h2 className="text-4xl font-bold tracking-wide sm:text-4xl">
             Privacy <span className=" text-emerald-600">Policy</span>
           </h2>
-          <p className="text-2xl italic leading-8 ">
+          <p className="text-xl italic leading-8 ">
             At ShipIt, we value your privacy and are committed to maintaining
             the trust and confidence of our users. We will never sell, rent or
             trade your personal information to other companies for marketing
-            purposes. We use the information you provide to facilitate the
-            moving process and enhance your experience. Our advanced AI
-            technologies are designed to securely process and protect your data.
+            purposes. <br></br>
+            <br></br>We use the information you provide to facilitate the moving
+            process and enhance your experience. Our advanced AI technologies
+            are designed to securely process and protect your data.
           </p>
         </div>
 
