@@ -65,13 +65,13 @@ export default function Page() {
               className="font-semibold hover:font-bold hover:underline"
               href="https://helloimtrevor.com/"
             >
-              Trevor Brown
+              Trevor Brown!
             </Link>
-            . After almost two decades as an investigative journalist, I'm
-            moving into the coding world. And as a technology enthusiast with a
-            passion for simplifying everyday tasks, I created ShipIt to
-            revolutionize the moving industry. My aim is to harness the power of
-            AI to provide stress-free moving experiences for everyone.
+            After almost two decades as an investigative journalist, I'm moving
+            into the coding world. And as a technology enthusiast with a passion
+            for simplifying everyday tasks, I created ShipIt to revolutionize
+            the moving industry. My aim is to harness the power of AI to provide
+            stress-free moving experiences for everyone.
           </p>
         </div>
 
