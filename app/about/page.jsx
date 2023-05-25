@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Contact from "./contact";
 import Image from "next/image";
-import trevor from "../../public/Images/Trevor12.JPG";
+import trevor from "../../public/Images/trevor.png";
 
 export default function Page() {
   return (
